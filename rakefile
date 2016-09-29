@@ -1,0 +1,7 @@
+require './attachment_downloader'
+
+task default: :download_attachments
+
+task :download_attachments do
+  AttachmentDownloader.new.download
+end
